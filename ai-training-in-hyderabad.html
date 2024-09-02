@@ -23,6 +23,7 @@
   <meta property="business:contact_data:country_name" content="India">
   <!-- Open Graph End Code -->
   <!-- core CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
   <style>body{display: none;}</style>  
   <link rel="preload" href="css/main-new.css?v=6" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="preload" as="font" rel="stylesheet" href="css/main-new.css?v=6"></noscript> 
@@ -2133,6 +2134,13 @@
           <h4 class="modal-title">Get Skilled</h4>
         </div>
         <div class="modal-body">  
+          <style>
+          .padb20{ padding-bottom: 20px;}
+          .iti { 
+    display: block !important;
+}
+
+          </style>
    
   <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -2150,13 +2158,13 @@
      <!-- Do not remove this code. -->
   
   <div class='zcwf_row'><div class='zcwf_col_lab'  ><label for='Last_Name'>Name<span class="red">*</span></label></div><div class='zcwf_col_fld'><input type='text' id='Last_Name' name='Last Name' maxlength='80'></input><div class='zcwf_col_help'></div></div></div>
-  
+  <div class='zcwf_row padb20'>
   <div class='zcwf_col_lab' ><label for='Phone'>Phone<span class="red">*</span></label></div>
-  <div class="phnum">
-    <input type='text' id='LEADCF29' name='LEADCF29' maxlength='255' value='91'  class="w70px"></input>
-    <input type='text' id='Phone' name='Phone' maxlength='30'></input>
-  </div>
-  
+  <div class="form-group">
+    <input type="text" id="Phone" class="form-control" placeholder="Phone Number" name="name">
+</div>
+</div>
+   
     
     <div class='zcwf_row'><div class='zcwf_col_lab'><label for='Email'>Email<span class="red">*</span></label></div><div class='zcwf_col_fld'><input type='text' ftype='email' autocomplete='false' id='Email' name='Email' crmlabel='' maxlength='100'></input><div class='zcwf_col_help'></div></div></div><div class='zcwf_row'><div class='zcwf_col_lab'></div><div class='zcwf_col_fld'><input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Submit' title='Submit'> </div></div>
     <script>
@@ -2263,7 +2271,17 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/chat.js"></script> 
-  <script src="js/main.js"></script>   
+  <script src="js/main.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+  <script>
+   // -----Country Code Selection
+$("#Phone").intlTelInput({
+	initialCountry: "in",
+	separateDialCode: true,
+	// utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+});
+
+  </script>
 </body>
 
 </html>
