@@ -6433,6 +6433,7 @@ hr {
     .header .navbar-toggler {
         top: 20px;
     }
+    
 }
 
 .red {
@@ -6498,3 +6499,11 @@ hr {
     .dfaqs .card-body{ padding: 20px 30px;}
     .dfaqs .updown_arrow{top: 10px;
         right: 25px;}
+
+       .fixed-header .flogo {
+            width: auto !important;
+        }
+.footer .col-md-3 .imgwh{width: 180px !important;}
+.header.fixed-header .imgwh {
+    height: 70px !important;
+}
