@@ -6507,3 +6507,7 @@ hr {
 .header.fixed-header .imgwh {
     height: 70px !important;
 }
+@media (min-width: 320px) and (max-width:767px) {
+.header .imgwh {
+    height: 60px !important;
+}}
